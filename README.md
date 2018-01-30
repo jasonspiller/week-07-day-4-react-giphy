@@ -9,7 +9,7 @@
 Fork and clone to get a local copy of the app.
 
 
-Check out to the solution branch.
+Check out to the solution branch to see what's ahead. Or alternatively, push forward into uncharted territory without a map!
 
 ```
 npm install
@@ -25,15 +25,15 @@ A solution with giphy gif searching is available in a [react-giphy-solution](htt
 
 Move back to the `master` branch to build out the app yourself! Remove your `node_modules` folder manually, since it's included in `.gitingore`.   Re-`npm install` any packages you will need.
 
-Before we start building our React app, let's create a `HelloWorld` component just to make sure that we've tied everything together properly.  
+Before we start building our React app, let's create a `hello world` component just to make sure that we've tied everything together properly.  This time we are using some boilerplate, but a little less than is generated using create-react-app. Let's get more intimate with the boilerplate code. 
 
-- In your `/src` directory, configure your `App.js` and `index.js` files to render a `HelloWorld` component.
+- In your `/src` directory, configure your `App.js` and `index.js` files to render a `App` component. Make the component simple display 'hello world' in a h1 tag.  We'll use that as a base for our app. 
 - Run `npm start` and make sure everything is working.
 
 ### Step 2: Add UI for Home
 
 - Rename `App.js` to `Home.js` to better indicate the purpose of the file. Make sure to update references to this file elsewhere in your application accordingly.
-- Create a Home component that returns a container `<div>` element, which should in turn contain a `<h1>` element.
+- Make the Home component return a container `<div>` element, which should in turn contain a `<h1>` element.
 - Render that component to the DOM in your app's main `index.js` file
 
 ### Step 3: Add UI for Search
@@ -50,6 +50,7 @@ Before we start building our React app, let's create a `HelloWorld` component ju
   - Use an event listener to attach this function to your form. Try googling `onSubmit`.
 - Define a function that updates your `query` value in state whenever a change is made to the input field. You can do this using an `onInput` function on your text box, or by using `ref`.
 - Update your submit function so that it now logs the `query` value in state.
+- **hint:** Check out the [React docs for forms](https://reactjs.org/docs/forms.html)
 
 ### Step 5: Move search logic to a `SearchContainer` component
 
