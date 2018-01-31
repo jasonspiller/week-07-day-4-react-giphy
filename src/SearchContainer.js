@@ -38,13 +38,10 @@ class SearchContainer extends Component {
 	render() {
 		let results;
 		if (this.state.response) {
-      		console.log(this.state.response)
       results = this.state.response.map((item,index) =>
 			  <img key={index} src={item.images.fixed_height_small.url} alt="results" />
 			)
-    } else {
-      results = <span>Loading...</span>;
-    }
+    } 
 
 		return (
 			<div> 
