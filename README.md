@@ -117,7 +117,7 @@ Before we start building our React app, let's create a `hello world` component j
 
 ### Step 7: Search the Giphy API
 
-- With the API we're using, you don't need to register for an API key. Go ahead an look at the [documentation](https://github.com/Giphy/GiphyAPI) to determine the API's proper usage.
+- With the API we're using, you need to register for an API key, but luckily, it is free. You will find this is the case for many free to use APIs. Go ahead and look at the [documentation](https://github.com/Giphy/GiphyAPI) to determine the API's proper usage.
 - We're going to be searching the giphy API based on a word or phrase to return a collection of results.
 - Load in jQuery, and use it to make an HTTP request to the API search endpoint using the user's query.
 - Pass the data to the Results component to be displayed.
